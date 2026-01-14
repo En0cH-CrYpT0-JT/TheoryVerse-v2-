@@ -1,0 +1,7 @@
+{
+  "name": "TheoryVerse Hologram Core",
+  "description": "A high-fidelity WebGL hologram visualization platform for engine blueprints and theoretical data structures, featuring parallax depth mapping and immersive fly-through controls.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
