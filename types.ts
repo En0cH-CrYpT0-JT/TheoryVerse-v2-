@@ -5,10 +5,15 @@ export enum SimulationState {
   ACTIVE = 'ACTIVE'
 }
 
+export type SourceType = 'TEXT' | 'IMAGE' | 'CAMERA' | 'URL' | 'FILE';
+
 export interface SimulationParams {
   concept: string;
   variance: number;
   mode: 'SINGLE' | 'COMPARE' | 'COLLISION' | 'MERGE';
+  sourceType: SourceType;
+  mediaData?: string; // base64 or URL
+  fileName?: string;
 }
 
 export interface HologramData {
